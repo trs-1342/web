@@ -193,5 +193,52 @@
                 height="500"
                 title="kisa aciklama"
         /></a>
+
+        <!-- tablolar -->
+        <br />
+        <br />
+        <!-- tablo -->
+        <!-- border: tablonun cercevesi px cinsinden verir -->
+        <!-- 
+
+        th, thead: tablo header, yani tablo basligi. digerlerine gore kalin yazilir
+
+         -->
+        <p><b>Calisan Personel Maas Tablosu:</b></p>
+        <table border="1">
+            <!-- satirlar -->
+            <!-- baslik satiri -->
+            <thead>
+                <tr>
+                    <!-- sutunlar -->
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <!-- <th>Ay</th> -->
+                    <th>Maas</th>
+                </tr>
+            </thead>
+            <!-- icerik satirir -->
+            <tbody>
+                <tr>
+                    <td>Halil</td>
+                    <td>Hattab</td>
+                    <!-- <td>Ocak</td> -->
+                    <td>21000 TL</td>
+                </tr>
+                <tr>
+                    <td>Zeynep</td>
+                    <td>Hattab</td>
+                    <!-- <td>Ocak</td> -->
+                    <td>42000 TL</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!-- colspan: sutunlari birlestirir. -->
+                    <!-- rowspan: satirlari birlestirir. -->
+                    <td colspan="3">Toplam: 63000 TL</td>
+                </tr>
+            </tfoot>
+        </table>
     </body>
 </html>
