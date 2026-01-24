@@ -345,5 +345,71 @@
             tarayiciniz bu ozelligi desteklemiyor / bir sorun cikti
             <!-- eger bir sorun cikarsa bu yaziyi gosterir -->
         </video>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <!-- iframe etiketleri -->
+
+        <!-- 
+
+        a linklerinde target niteligi icinde eger iframe'nin name degeri ile ayni ise iframe icinde acar
+
+         -->
+
+        <!-- eger acilmayan bir site olursa "X-Frame-Options Header" politikasina uygun davranip acilamayabilirler.
+
+        bazi sayfalar iframe'de acilmasini engeller
+
+        kaynak: https://stackoverflow.com/questions/12265298/why-does-google-com-not-load-in-an-iframe
+         -->
+        <!-- calismiyorlar: -->
+        <!-- <a href="https://google.com" target="Bu-iframe">Google Ac</a>
+        <a href="https://youtube.com" target="Bu-iframe">Youtube Ac</a>
+        <a href="https://instagram.com" target="Bu-iframe">Instagram Ac</a>
+        <a href="https://github.com" target="Bu-iframe">Github Ac</a> 
+        <a href="https://gelisim.edi.tr" target="Bu-iframe">IGU Ac</a> -->
+        <a href="https://hattab.vercel.app" target="Bu-iframe">Hattab Ac</a> |
+        <a href="./test2.html" target="Bu-iframe">Test2 Ac</a>
+
+        <br />
+        <br />
+        <br />
+
+        <!-- sandbox="deger": icindeki haric tum islevleri engeller -->
+        <!-- sandbox="allow-forms": form islemleri haric engeller -->
+        <!-- sandbox="allow-scripts": javascript islemleri haric engeller -->
+        <!-- sandbox: tum islevleri engeller -->
+        <iframe
+            name="Bu-iframe"
+            src="https://hattab.vercel.app"
+            width="800"
+            height="800"
+            frameborder="1"
+            sanbox="allow-scripts"
+        ></iframe>
+
+        <!-- Error 153 hatasini alirsaniz arastirip duzeltmenin yollarini arayin. cerezlerle guvenlik politikalari ile ilgili olabilir. -->
+
+        <!-- <iframe
+            width="907"
+            height="510"
+            src="https://www.youtube.com/embed/wdiNK8_ShSk"
+            title="LP - Other People"
+            frameborder="0"
+            allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+        ></iframe> -->
     </body>
 </html>
