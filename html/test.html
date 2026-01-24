@@ -194,7 +194,7 @@
                 title="kisa aciklama"
         /></a>
 
-        <!-- tablolar -->
+        <!-- tablolar etiketleri -->
         <br />
         <br />
         <!-- tablo -->
@@ -240,5 +240,81 @@
                 </tr>
             </tfoot>
         </table>
+
+        <br />
+        <br />
+        <br />
+
+        <!-- listeleme etiketleri -->
+
+        <!-- duzensiz listeleme -->
+        <ul>
+            <!-- her madde li etiketi ile etiketlenir. -->
+            <li>sabah 7'de uyan</li>
+            <li>dislerini fircala</li>
+            <li>namaz kil</li>
+            <li>
+                okula hazirlan
+                <ul>
+                    <li>okul kiyafetleri giy</li>
+                    <li>ders programina gore cantani hazirla</li>
+                    <li>cikis saatinden once hazirlanirsan bos bos otur</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- duzenli listeleme -->
+        <ol>
+            <li>editoru ac</li>
+            <li>dosyayi olustur</li>
+            <li>dosyaya kodlari yaz</li>
+        </ol>
+
+        <!-- tanim listesi -->
+        <dl>
+            <!-- tanimi yapilacak degeri icerir -->
+            <dt>IDE</dt>
+            <!-- tanimi yapilacak degerin tanimini icerir -->
+            <dd>kodlari yazdigimiz programdir</dd>
+
+            <dt>Halil</dt>
+            <!-- baslik -->
+            <dd>samimi dost, sadık arkadaş</dd>
+            <!-- icerik -->
+        </dl>
+
+        <!-- listelemede farkli listeleme sekilleri -->
+
+        <!--
+            start="deger": baslatmak istediginiz degeri girersiniz.
+
+            type="A": alfabetik sirlama ile buyuk haflerde listeler
+            type="A": alfabetik sirlama ile kucuk haflerde listeler
+            type="i": kucuk roma rakamlari ile listeler
+            type="i": buyuk roma rakamlari ile listeler
+            type="1": numarali listeler
+
+         -->
+
+        <ol type="1" start="13">
+            <li>madde 1</li>
+            <li>madde 2</li>
+            <li>madde 3</li>
+        </ol>
+
+        <!--
+
+            type="disc" (varsayilan): nokta ile listeler
+            type="circle": ici bos nokta ile listeler
+            type="square": kare ile listeler
+            type="none": bos birakir (listeleme isareti kullanmaz)
+
+         -->
+
+        <ul type="none">
+            <li>madde 4</li>
+            <li>madde 5</li>
+            <li>madde 6</li>
+        </ul>
     </body>
 </html>
