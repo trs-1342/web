@@ -411,5 +411,233 @@
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
         ></iframe> -->
+
+        <br />
+        <hr />
+        <!-- cizgi ceker -->
+        <br />
+
+        <!-- form etiketleri -->
+
+        <!-- action: bilgileri gonderecegi yer (bos birakilirsa ayni sayfaya gider) -->
+        <!-- method: verinin nasil davranacagini belirler -->
+        <form action="" method="GET" id="FORM-ID">
+            <!-- fieldset: elementleri gurplarndirarak cerceveletir -->
+            <fieldset>
+                <!-- legend: gruplandirilan elementlere baslik atar -->
+                <legend>Temel Giris Bilgileri: </legend>
+                <!-- input: kullanicindan veri alir -->
+                <!-- type="text": normal metin alir -->
+                <!-- label: ilgili input icin yazi -->
+                <!-- for="ID": hangi inputa bagli olacaksa o inputun id bilgisi yazilir -->
+                <!-- ek olarak label'e tiklandiginda bagli oldugu id/input'a gider/odaklanir -->
+                <label for="username">Username gir*</label>
+                <!-- required: bos ise uyari verir ve verilerin isleme gecmesini engeller (gerekli/zorunlu alan) -->
+                <!-- placeholder="deger": ipucu yazisi -->
+                <input required id="username" type="text" placeholder="trs-1342" />
+                <br /><br />
+
+                <!-- type="password": sifre formatinda alir -->
+                <label for="password">Password gir*</label>
+                <!-- maxlength="deger": maximum alacagi karakter sayisi -->
+                <!-- burada en fazla sifre uzunlugunu 21 olarak ayarladim: -->
+                <input required id="password" type="password" maxlength="21" placeholder="••••••••" />
+                <br /><br />
+
+                <!-- type="file": dosya alir -->
+                <label for="dosya">Dosya sec</label>
+                <!-- accept="deger": secilen turde dosyalari filtreler -->
+                <!-- accept="image/*": sadece tum image tiplerini filtreler -->
+                <!-- multiple: birden fazla dosya secebilir, bunu eklediginizde name degerin sonunda '[]' eklemeniz gerekebilir. -->
+                <input id="dosya" type="file" accept="image/*" multiple name="dosya[]" />
+            </fieldset>
+            <br /><br />
+
+            <!-- type="checkbox": isaretli kutu -->
+            <label> <input type="checkbox" required />Sozlesmeyi kabul ediyorum.*</label>
+            <br>
+            <!-- checked: varsayilan olarak secer -->
+            <!-- disabled: varsayilan olarak devre disi birakir -->
+            <label> <input type="checkbox" checked disabled />Aydinlatma metnini okudum. </label>
+            <br /><br />
+
+            <label for="cinsiyet-erkek"><input id="cinsiyet-erkek" type="radio" name="cinsiyet" value="erkek"> Erkek</input></label>
+            <!-- name="deger": kullanıcıların önceden tanımlanmış bir seçenek kümesinden birini seçmesi gerektiğinde kullanılan bir HTML giriş öğesi türüdür -->
+            <!-- yani: konu cinsiyet secmek ise ayni konu altinda toplamak icin ayni isim verilir. -->
+            <!-- value="deger": veri isleminde secilen'in verisini gonderir. -->
+            <label for="cinsiyet-kadin"><input id="cinsiyet-kadin" type="radio" name="cinsiyet" value="kadin"> Kadin</input></label>
+
+            <br><br>
+
+            <input type="hidden" name="test" value="test"> <!-- sayfada gozukmez ama kodlarla ileride kullanilabilir. -->
+
+            <!-- type="submit": gonderme butonu -->
+            <!-- value="deger": gonderme butonun icinde yazilacak deger -->
+            <!-- formaction="deger": form etiketindeki action'a mudahale ederek belirtilen dosyaya gider. -->
+            <!-- formmethod="deger": form etiketindeki method'a mudahale ederek belirtilen metodu kullanir. -->
+            <!-- formtarget="deger": a linki gibi target niteliginin gorevini yapar -->
+            <input type="submit" formtarget="_blank" formmethod="POST" formaction="dosya.html" value="gonder" />
+            <input type="reset" value="sifirla" /> <!-- form sayfasini sifirlar -->
+        </form>
+
+        <!-- 
+        dikkat:
+            1. form icindeki veriler gider, form disinda veri gonderilemez. yani alttakilerin verisi gonder butonuna tiklandiginda gitmez
+
+            2. name niteligi olmayan input verisi gitmez.
+
+            3. eger form disindaki bir veriyi almak isterseniz o inputa: form, id ve name niteligi belirtmeniz gerekir.
+            ornek:
+        -->
+
+        <label for="test3">
+            <input type="text" name="test3" id="test3" placeholder="test3" form="FORM-ID">
+        </label>
+
+        <br>
+        <br>
+        <br>
+        
+        <label for="numara">
+            <!-- type="number": sadece numarali degerler alir -->
+            <!-- max: maximum alabilecegi deger -->
+            <!-- min: minimum alabilecegi deger -->
+            <input id="numara" type="number" min="13" max="42">
+        </label>
+        
+
+        <label for="renk">
+            <!-- type="color": renk secer -->
+            <input id="renk" type="color">
+        </label>
+        <br>
+        <br>
+        
+
+        <label for="tarih">
+            <!-- type="date": tarih secer -->
+            <input id="tarih" type="date">
+        </label>
+        <br>
+        <br>
+        
+
+        <label for="zaman">
+            <!-- type="datetime-local": tarih + saat secer -->
+            <input id="zaman" type="datetime-local">
+        </label>
+        <br>
+        <br>
+        
+
+        <label for="eposta">
+            <!-- type="email": sadece eposta @ formatinda alir -->
+            <input id="eposta" type="email">
+        </label>
+        <br>
+        <br>
+        
+
+        <label for="sayac">
+            <!-- type="range": belirtilen aralikta (min/max) sayac gostergesi -->
+            <!-- step="deger": her kacta artacagi/azalacagi belirler -->
+            <!-- step="2": 2'ser olarak artirir/azaltir -->
+            <input id="sayac" type="range" min="1" max="100" step="2">
+        </label>
+        <br>
+        <br>
+        
+
+        <label for="arama">
+            <!-- type="search": arama gorevi formatinda -->
+            <!-- autofocus: otomatik odaklanir -->
+            <input id="arama" type="search" autofocus>
+        </label>
+        <br>
+        <br>
+        
+
+        <label for="telno">
+            <!-- type="tel": telefon no icin formatinda alir -->
+            <input id="telno" type="tel">
+        </label>
+        <br>
+        <br>
+        
+
+        <label for="link">
+            <!-- type="url": link/url olarak alir -->
+            <input id="link" type="url">
+        </label>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <label for="test2">
+            <!-- autocomplete="off/on": yazmaya basladigimizdaki daha onceden yazilan veya oneri olarak sunulan pencereyi kapatir/acar -->
+            <input type="text" name="username" id="test2" autocomplete="off" placeholder="...">
+        </label>
+
+        <br><br>
+
+
+        <!-- input ve datalist etiketleri -->
+
+        <!-- 
+
+            list="deger": baglatmak istediginiz listenin id degeri yazilir
+
+         -->
+
+        <input list="diller">
+        <!-- datalist: onceden hazir secmeli menu listesinin ana kapsayicisi -->
+        <!-- option: menude listelenecek her bir elemani kapsar -->
+        <datalist id="diller">
+            <option value="JavaScript">
+            <option value="PHP">
+            <option value="C#">
+            <option value="C++">
+            <option value="C">
+            <option value="Java">
+            <option value="Python">
+        </datalist>
+
+        <!-- multiple: birden fazla secime olanak tanir -->
+        <!-- size="deger": menunun buyuklugunu belirler -->
+        <select name="temel-web[]" multiple size="2">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+
+        <br>
+        <br>
+        <br>
+
+        <select name="dil-turleri" id="dil-turleri">
+            <!-- optgroup: menude belli bir baslik altinda gruplandirmayi yarar -->
+            <optgroup label="frontend">
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="js">js</option>
+            </optgroup>
+            <optgroup label="backend">
+                <option value="php">php</option>
+                <option value="python">python</option>
+                <option value="js">js</option>
+            </optgroup>
+        </select>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- textarea: cok satirli input gorevi gorur. -->
+        <!-- cols="deger": genislik -->
+        <!-- rows="deger": yukseklik -->
+        <textarea name="metin" id="metin" cols="30" rows="10"></textarea>
+
+        <button type="submit">Gonder</button>
+
     </body>
 </html>
