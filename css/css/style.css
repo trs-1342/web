@@ -1,0 +1,7 @@
+/* baska bir dosyayi indirir/ekler/dahil eder */
+@import "./text.css";
+/* link uzerinden css ekleme */
+/*@import url("text.css");*/
+body{
+    background-color: black;
+}
