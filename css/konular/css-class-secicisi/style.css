@@ -1,0 +1,46 @@
+/* class tanimlamadan once */
+
+/*h3 {
+    color: blue;
+}
+
+p {
+    color: blue;
+}
+
+div {
+    color: blue;
+}*/
+
+/* class tanimlandiktan sonra */
+/* class tanimlamak icin . basina konulur */
+/* class birden cok etikete mudahale edebilir. */
+/* class avantaji: birden fazla elemente ayni anda mudahale edebilir ve ustteki gibi uzun uzun yazmaktan kurtarir. */
+.color-blue {
+    color: blue;
+}
+
+/* kalin yazi icin tanimlanan class */
+.text-bold {
+    /* font tarzini kalinlik degerini belirler */
+    font-weight: bold;
+}
+
+/* italik yazi icin tanimlanan class */
+.text-italic {
+    /* font tarzini belirler */
+    font-style: italic;
+}
+
+/* color-blue icinden text-italic olani mudahale etmek: */
+.color-blue.text-italic {
+    color: red;
+}
+
+p#paragraf {
+    color: purple;
+}
+
+p.color-blue#paragraf {
+    color: green;
+}
