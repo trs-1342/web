@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <title>input ve datalist etiketleri</title>
+    </head>
+    <body>
+        <!-- input ve datalist etiketleri -->
+
+        <!-- 
+
+            list="deger": baglatmak istediginiz listenin id degeri yazilir
+
+         -->
+
+        <input list="diller" />
+        <!-- datalist: onceden hazir secmeli menu listesinin ana kapsayicisi -->
+        <!-- option: menude listelenecek her bir elemani kapsar -->
+        <datalist id="diller">
+            <option value="JavaScript"></option>
+            <option value="PHP"></option>
+            <option value="C#"></option>
+            <option value="C++"></option>
+            <option value="C"></option>
+            <option value="Java"></option>
+            <option value="Python"></option>
+        </datalist>
+
+        <!-- multiple: birden fazla secime olanak tanir -->
+        <!-- size="deger": menunun buyuklugunu belirler -->
+        <select name="temel-web[]" multiple size="2">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+
+        <br />
+        <br />
+        <br />
+
+        <select name="dil-turleri" id="dil-turleri">
+            <!-- optgroup: menude belli bir baslik altinda gruplandirmayi yarar -->
+            <optgroup label="frontend">
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="js">js</option>
+            </optgroup>
+            <optgroup label="backend">
+                <option value="php">php</option>
+                <option value="python">python</option>
+                <option value="js">js</option>
+            </optgroup>
+        </select>
+
+        <br />
+        <br />
+        <br />
+
+        <!-- textarea: cok satirli input gorevi gorur. -->
+        <!-- cols="deger": genislik -->
+        <!-- rows="deger": yukseklik -->
+        <textarea name="metin" id="metin" cols="30" rows="10"></textarea>
+
+        <button type="submit">Gonder</button>
+    </body>
+</html>
