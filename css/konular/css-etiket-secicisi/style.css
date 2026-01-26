@@ -1,0 +1,35 @@
+/*
+yapisi:
+    etiket adi {  }
+    {}: secici gorevi yapar
+*/
+
+/* tum h1 etiketleri etkiler */
+h1 {
+    /* rengi kirmizi yapar */
+    color: red;
+}
+
+/* tum p etiketleri etkiler */
+p {
+    /* rengi mavi yapar */
+    color: blue;
+}
+
+/* tum li etiketleri etkiler */
+li {
+    /* rengi mor yapar */
+    color: purple;
+}
+
+/* tum span etiketleri etkiler */
+span {
+    /* rengi yesil yapar */
+    color: green;
+}
+
+/* tum div etiketleri etkiler */
+div {
+    /* rengi acik gri yapar */
+    color: slategray;
+}
