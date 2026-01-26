@@ -1,0 +1,19 @@
+h3 {
+    color: red;
+}
+
+/* id ile secim yapmak icin # isareti koyulur */
+/* 
+not:
+    en son hangi css kodu yazilirsa o gecerli olur ancak id daha baskin oldugu icin ilk basta yazilsa bile o secilir.
+ */
+
+/*#title {
+    color: black;
+}
+*/
+
+/* h3 etiketlerin arasinda id degeri title olani etkiler */
+h3#title {
+    color: blue;
+}
