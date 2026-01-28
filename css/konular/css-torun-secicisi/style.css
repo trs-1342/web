@@ -1,0 +1,18 @@
+/* torun secicisi */
+/* etiket adindan sonra etiket adi ekleyerek ilk etiketin icindeki etikete erismis oluruz. */
+/*div p {
+    color: red;
+}*/
+
+/* 
+    ben tum icinde p etiketi olan divleri degil, id ile referans alarak bunlari mudahale edecegim
+ */
+
+#bu-div #bu-p {
+    color: blue;
+}
+
+/* bu-div adli id icindeki span icindeki p etiketine mudahale et */
+#bu-div span p {
+    color: dimgrey;
+}
