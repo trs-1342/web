@@ -1,0 +1,11 @@
+/* 1. derececden sira olarak yakinlik olan etiketi secer */
+/*
+    yani, h1 etiketlerinden sonra ilk p etiketi secer
+*/
+h1 + p {
+    color: red;
+}
+/* divden sonra ilk gelen/eklenen p etiketinin icindeki .msj elementini etkiler */
+div + p .msj {
+    color: blue;
+}

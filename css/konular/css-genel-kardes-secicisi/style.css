@@ -1,0 +1,9 @@
+/* ~: h1 den sonra gelen tum p etiketlerini etkiler */
+h1 ~ p {
+    color: red;
+}
+
+/* listede 2. maddeden sonra gelen tum etiketleri etkiler */
+ul li#m2 ~ li {
+    color: blue;
+}
