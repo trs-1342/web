@@ -1,0 +1,20 @@
+/* ugrastirir */
+/*p {
+    color: red;
+}
+
+h3 {
+    color: red;
+}
+
+div {
+    color: red;
+}
+*/
+
+/* hizlandirir */
+/* tum elementleri tek tek sececegimize ayni anda secelim */
+
+#uzun-paragraf, .kisa-paragraf, h3, p{
+    color: red;
+}
