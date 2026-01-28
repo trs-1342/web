@@ -1,0 +1,12 @@
+/* tum elementleri secer */
+/* genellikle css resetleme icin kullanilir cunku tarayicilar arasinda css kodlari degisebilir. */
+/* tarayicidan tarayiciya css kodlari degisebilir. */
+/* * isareti tum elementleri secer */
+/** {
+    color: gray;
+}*/
+
+/* div icindeki tum etiketleri secip mudahale eder. */
+div * {
+    color: red;
+}
