@@ -1,0 +1,8 @@
+/* css ile nitelik secmek icin [] karakterlerini kullaniriz */
+abbr[title] { /* sadece abbr elemntlerinde title niteligi olan etiketleri secer */
+    color: green;
+}
+
+img[alt]{
+    border:5px solid green;
+}

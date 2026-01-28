@@ -1,0 +1,12 @@
+/* belirtilen degerde her hangi bir yerde uyusan karakterleri secmek icin * kullanilir. */
+div[class*="box"]{
+    color: black;
+    background-color: red;
+}
+
+
+/* harf uyusmadiginda bunu gidermek icin altta kod verimistir: */
+div[class*="box" i]{ /* i insensitive yani duyarsiz anlamina geldigini dusunebilirsiniz. BUYUK/kucuk harf duyarliligini devre disi birakir */
+    color: black;
+    background-color: red;
+}

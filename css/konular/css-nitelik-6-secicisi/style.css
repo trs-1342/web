@@ -1,0 +1,5 @@
+/* belirtilen degerde son uyusan karakterleri secmek icin $ kullanilir. */
+div[class$="box"] {
+    background-color: blue;
+    color: white;
+}

@@ -1,0 +1,4 @@
+/* istenilen degeri ve deger- yani tire (-) ile bile olsa eslesenleri mudahale eder */
+div[class|="box"]{
+    background-color: orange;
+}

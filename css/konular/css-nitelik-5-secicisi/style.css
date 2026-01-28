@@ -1,0 +1,4 @@
+/* belirtilen degerde ilk uyusan karakterleri secmek icin ^ (capka veya us karakteri) kullanilir. */
+div[class^="box"]{
+    background-color: red;
+}

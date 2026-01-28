@@ -1,0 +1,5 @@
+/* alt niteliginde uni kelimesi gecen tum elementleri etkiler*/
+img[alt~="uni"]{
+    border: 5px solid red;
+    /* (cerceve) border: kalinlik tarz renk */
+}

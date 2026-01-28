@@ -1,0 +1,8 @@
+/* elementlerde niteliklerin belirtilen degerde esit olanlar icin css mudahalesi */
+a[target="_blank"] {
+    color: red;
+}
+
+img[alt=""] {
+    border: 5px solid blue;
+}
