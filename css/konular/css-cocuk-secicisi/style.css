@@ -1,0 +1,31 @@
+/* bu yapi torun yapisina daha cok yakin, ilk ve son secilen element arasinda 1. dereceden yakinlik olmasa bile etkilenir */
+
+/*p b {
+    color: blue;
+}
+
+p em {
+    color: blue;
+}
+*/
+
+/* bu ise sadece 1. dereceden olarak etkilenen bir yapi */
+p > b {
+    color: blue;
+}
+
+p > em {
+    color: red;
+}
+
+/* ustteki kodlara bakarak:
+    1. ornekte her 2 p etiketi etkilenir.
+    2. ornekte ise sadece baba-cocuk iliskisi etkilenir.
+
+
+    2. p etiketi iliskisi p>span>b oldugu icin etkilenmedi, altta etkileyen kod var:
+*/
+
+p > span > b{
+    color: green;
+}
