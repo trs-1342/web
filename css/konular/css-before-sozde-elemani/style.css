@@ -1,0 +1,11 @@
+div {
+    background: red;
+}
+
+/* onceden mudahale turu */
+/* dikkat: eger content tanimlanmazsa, diger yazilanlar tanimlanamaz olur */
+.box::before {
+    content: "ONCEDEN EKLENEN YAZI before "; /* bos bile olsa tanimlayin ki alttaki tanimlananlar calissin */
+    color: white;
+    background: black;
+}

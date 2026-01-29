@@ -1,0 +1,11 @@
+/* div elementine renk verildi */
+div {
+    background: red;
+}
+/* after sonrasi demek */
+/* div elementine after sozde elemani ile div iceriginin sonrasinda belirtilen yaziyi ekler */
+div::after {
+    content: " SONRADAN EKLENEN after";
+    /* burada ne yazilirsa o sonra olarak eklenen ogeyi etkiler */
+    color: white;
+}
